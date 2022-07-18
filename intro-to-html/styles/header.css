@@ -1,0 +1,238 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+  z-index: 1;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35;
+  max-width: 500px;
+  align-items: center;
+}
+
+.search-bar {
+  padding-left: 10px;
+  flex: 1;
+  height: 40px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: rgb(192, 192, 192);
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+  width: 0px;
+}
+
+.search-icon {
+  height: 23px;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search-button{ 
+  height: 40px;
+  width: 66px;
+  border-width: 1px;
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(192, 192, 192);
+  border-style: solid;
+  margin-left: -1px;
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip {
+  position:absolute;
+  top: 52px;
+  left: 6px;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+}
+
+.voice-search-button .tooltip {
+  position:absolute;
+  top: 52px;
+  left: -50px;
+  white-space: nowrap;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events: none;
+}
+
+.voice-search-button:hover .tooltip {
+  opacity: 1;
+}
+.voice-search-icon {
+  height: 24px;
+}
+
+.right-section {
+  display: flex;
+  width: 230px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+}
+
+.upload {
+  height: 24px;
+}
+
+.youtube-apps {
+  height: 24px;
+}
+
+.notifications {
+  height: 24px;
+}
+
+.my-channel {
+  height: 32px;
+  width: 35px;
+  border-radius: 35px;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notification-icon {
+  position: relative;
+}
+
+.alert {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  border-radius: 10px;
+}
+
+
+
+.upload-icon .tooltip,
+.youtube-apps-icon .tooltip,
+.notification-icon .tooltip {
+  position: absolute;
+  background-color: gray;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 39px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.upload-icon .tooltip {
+  right: -11px;
+}
+
+.upload-icon:hover .tooltip {
+  opacity: 1;
+}
+
+.notification-icon .tooltip {
+  right: -31px;
+}
+
+.notification-icon:hover .tooltip {
+  opacity: 1;
+}
+
+.youtube-apps-icon .tooltip {
+  white-space: nowrap;
+  right: -31px;
+}
+
+.youtube-apps-icon:hover .tooltip {
+  opacity: 1;
+}
+
+.hamburger-menu:hover,
+.youtube-logo:hover,
+.search-button:hover,
+.voice-search-button:hover,
+.upload-icon:hover,
+.youtube-apps-icon:hover,
+.notification-icon:hover,
+.my-channel:hover {
+  cursor: pointer;
+}

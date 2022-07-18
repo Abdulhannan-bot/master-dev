@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(58, 236, 58);
+}
+
+.clicker {
+  color: blue;
+  text-decoration: underline;
+}
+
+.clicker:hover {
+  cursor: pointer;
+}
+
+.clicker:active {
+  color: white;
+}
